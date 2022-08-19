@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWEB - Exercício 02</title>
+    <style>
+        body{
+            background-color: #f5f5f5;
+        }
+        div{
+            display: table;
+            vertical-align: middle;
+            text-align: center;            
+        }
+        .container0{
+            background-color: gray;            
+        }
+        .container1{
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 10px;
+            background-color: darksalmon;
+            width: 150px;
+            height: 150px;
+        }
+        .container2{
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-left: 20px;
+            background-color: aquamarine;
+            width: 310px;
+            height: 90px;
+        }
+        .container3{
+            margin-top: 20px;
+            margin-right: 20px;
+            background-color: hotpink;
+            width: 150px;
+            height: 150px;
+        }
+        .container4{
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            background-color: cornflowerblue;
+            width: 310px;
+            height: 80px;
+        }
+        /* para mostrar os quadros um do lado do outro*/
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        /* para mostrar os quadros um abaixo do outro */
+        .flex-container2{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+<center>
+<!-- definindo a cor do texto para todo o body = branca -->
+<font color="white">
+    <div class="container0">
+       <!-- <div class="flex-container2"> -->
+            <div class="container2">
+            <!-- mostrar o quadro 2 na cor aquamarine -->
+                <p><h1>2</h1></p>
+            </div>
+            <div class="flex-container">
+                <div class="container1">
+                <!-- mostrar o quadro 1 na cor darksalmon -->
+                    <p><h1>1</h1></p>
+                </div>
+                <div class="container3">
+                <!-- mostrar o quadro 3 na cor hotpink -->
+                    <p><h1>3</h1></p>
+                </div>
+            </div>
+            <div class="flex-container2">
+            <!-- mostrar o quadros 4a e 4b na cor cornflowerblue -->
+                <div class=>
+                    <div class="container4">    
+                        <p><h1>4a</h1></p>
+                    </div>
+                    <div class="container4">
+                        <p><h1>4b</h1></p>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+    </div>
+</font>
+</center>
+</body>
+</html>
